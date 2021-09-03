@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Fav icon -->
+        <link rel="shortcut icon" href="https://openweathermap.org/img/wn/02d@2x.png" type="image/png">
+        <title>Temperature Hot</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        />
+        <style>
+            body {
+                background: url(images/bg-image.jpg) no-repeat;
+                background-size: cover;
+                height: 100vh;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container mt-5 pt-5">
+            <form class="col-md-6 m-auto py-5">
+                <div class="input-group mb-3">
+                    <input
+                        id="city-search"
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter a location for Weather ..."
+                    />
+                    <div class="input-group-append">
+                        <button
+                            id="search-btn"
+                            type="button"
+                            class="btn btn-danger"
+                        >
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="weather-status text-white text-center">
+                <img id="weather-icon"
+                    src="https://openweathermap.org/img/wn/02d@2x.png"
+                    alt=""
+                />
+                <h1 class="mb-1" id="city-name">---</h1>
+                
+                <h3 class="mt-3" ><span id="temp-result">00.00</span>&deg;C</h3>
+                <p id="envoirment" class="lead">Not Defiend</p>
+            </div>
+        </div>
+        <script src="js/app.js"></script>
+    </body>
+</html>
+ 
